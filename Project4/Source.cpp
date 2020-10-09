@@ -2,21 +2,21 @@
 
 void memory() 
 {
-	std::cout << "Îáú¸ì ïàìÿòè ïîä int = " << sizeof(int) << " áàéòà" << '\n';
-	std::cout << "Îáú¸ì ïàìÿòè ïîä short int = " << sizeof(short int) << " áàéòà" << '\n';
-	std::cout << "Îáú¸ì ïàìÿòè ïîä long int = " << sizeof(long int) << " áàéòà" << '\n';
-	std::cout << "îáú¸ì ïàìÿòè ïîä float = " << sizeof(float) << " áàéòà" << '\n';
-	std::cout << "îáú¸ì ïàìÿòè ïîä double = " << sizeof(double) << " áàéò" << '\n';
-	std::cout << "îáú¸ì ïàìÿòè ïîä long double = " << sizeof(long double) << " áàéò" << '\n';
-	std::cout << "îáú¸ì ïàìÿòè ïîä char = " << sizeof(char) << " áàéò" << '\n';
-	std::cout << "îáú¸ì ïàìÿòè ïîä bool = " << sizeof(bool) << " áàéò" << '\n' << '\n';
+	std::cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ int = " << sizeof(int) << " Ð±Ð°Ð¹Ñ‚Ð°" << '\n';
+	std::cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ short int = " << sizeof(short int) << " Ð±Ð°Ð¹Ñ‚Ð°" << '\n';
+	std::cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ long int = " << sizeof(long int) << " Ð±Ð°Ð¹Ñ‚Ð°" << '\n';
+	std::cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ float = " << sizeof(float) << " Ð±Ð°Ð¹Ñ‚Ð°" << '\n';
+	std::cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ double = " << sizeof(double) << " Ð±Ð°Ð¹Ñ‚" << '\n';
+	std::cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ long double = " << sizeof(long double) << " Ð±Ð°Ð¹Ñ‚" << '\n';
+	std::cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ char = " << sizeof(char) << " Ð±Ð°Ð¹Ñ‚" << '\n';
+	std::cout << "ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ bool = " << sizeof(bool) << " Ð±Ð°Ð¹Ñ‚" << '\n' << '\n';
 }
 
 void code_int() 
 {
 	int num,mask;
 	mask = INT_MIN;
-	std::cout << "×èñëî - ";
+	std::cout << "Ð§Ð¸ÑÐ»Ð¾ - ";
 	std::cin >> num;
 	putchar(num & mask ? '1' : '0');
 	std::cout << " ";
@@ -24,7 +24,7 @@ void code_int()
 		putchar(num & mask ? '1' : '0');
 		num <<= 1;
 	}
-	std::cout << " - êîä ââåä¸ííîãî ÷èñëà" << '\n' << '\n';
+	std::cout << " - ÐºÐ¾Ð´ Ð²Ð²ÐµÐ´Ñ‘Ð½Ð½Ð¾Ð³Ð¾ Ñ‡Ð¸ÑÐ»Ð°" << '\n' << '\n';
 }
 
 void code_float()
@@ -34,7 +34,7 @@ void code_float()
 		float num;
 	};
 	int mask = INT_MIN;
-	std::cout << "×èñëî - ";
+	std::cout << "Ð§Ð¸ÑÐ»Ð¾ - ";
 	std::cin >> num;
 	putchar(tool & mask ? '1' : '0');
 	tool <<= 1;
@@ -48,7 +48,7 @@ void code_float()
 		putchar(tool & mask ? '1' : '0');
 		tool <<= 1;
 	}
-	std::cout << " - Åãî êîä" << '\n' << '\n';
+	std::cout << " - ÐµÐ³Ð¾ ÐºÐ¾Ð´" << '\n' << '\n';
 }
 
 void code_double() 
@@ -57,7 +57,7 @@ void code_double()
 		long int tool[2];
 		double num;
 	};
-	std::cout << "×èñëî - ";
+	std::cout << "Ð§Ð¸ÑÐ»Ð¾ - ";
 	std::cin >> num;
 	int mask = INT_MIN, a;
 	a = mask & tool[1];
@@ -100,18 +100,18 @@ void code_double()
 		}
 		tool[0] <<= 1;
 	}
-	std::cout << " - Åãî êîä" << '\n' << '\n';
+	std::cout << " - ÐµÐ³Ð¾ ÐºÐ¾Ð´" << '\n' << '\n';
 }
 
 int main() {
 	setlocale(0, "");
 	int nomer;
 	start:
-		std::cout << "Âûáåðèòå íîìåð ðàçäåëà" << '\n' << '\n';
-		std::cout << "1) Îáú¸ì ïàìÿòè ïîä ðàçíûå òèïû äàííûõ" << '\n';
-		std::cout << "2) Êîä ÷èñëà int" << '\n';
-		std::cout << "3) Êîä ÷èñëà float" << '\n';
-		std::cout << "4) Êîä ÷èñëà double" << '\n' << '\n';
+		std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ñ€Ð°Ð·Ð´ÐµÐ»Ð°" << '\n' << '\n';
+		std::cout << "1) ÐžÐ±ÑŠÑ‘Ð¼ Ð¿Ð°Ð¼ÑÑ‚Ð¸ Ð¿Ð¾Ð´ Ñ€Ð°Ð·Ð½Ñ‹Ðµ Ñ‚Ð¸Ð¿Ñ‹ Ð´Ð°Ð½Ð½Ñ‹Ñ… " << '\n';
+		std::cout << "2) ÐšÐ¾Ð´ Ñ‡Ð¸ÑÐ»Ð° int" << '\n';
+		std::cout << "3) ÐšÐ¾Ð´ Ñ‡Ð¸ÑÐ»Ð° float" << '\n';
+		std::cout << "4) ÐšÐ¾Ð´ Ñ‡Ð¸ÑÐ»Ð° double" << '\n' << '\n';
 		std::cin >> nomer;
 		std::cout << '\n';
 
@@ -129,10 +129,10 @@ int main() {
 			code_double();
 			break;
 		default:
-			std::cout << "Ýòî óæå íå ê íàì)";
+			std::cout << "Ð­Ñ‚Ð¾ ÑƒÐ¶Ðµ Ð½Ðµ Ðº Ð½Ð°Ð¼)";
 			break;
 		}
-		std::cout << '\n' << "Åñëè íóæíî ÷òî-òî åù¸ - ââåäèòå '1', åñëè íåò - '0' " << '\n' << '\n';
+		std::cout << '\n' << "Ð•ÑÐ»Ð¸ Ð½ÑƒÐ¶Ð½Ð¾ Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ ÐµÑ‰Ñ‘ - Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ '1', ÐµÑÐ»Ð¸ Ð½ÐµÑ‚ - '0' " << '\n' << '\n';
 		int replay;
 		std::cin >> replay;
 		switch (replay) {
