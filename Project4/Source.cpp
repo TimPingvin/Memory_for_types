@@ -68,7 +68,7 @@ void code_double()
 		std::cout << "0 ";
 	}
 	tool[1] <<= 1;
-	for (int i = 1; i != 13; i++) {
+	for (int i = 1; i != 12; i++) {
 		a = tool[1] & mask;
 		if (a == mask) {
 			std::cout << '1';
@@ -79,7 +79,7 @@ void code_double()
 		tool[1] <<= 1;
 	}
 	std::cout << " ";
-	for (int i = 13; i != 32; i++) {
+	for (int i = 12; i != 32; i++) {
 		a = tool[1] & mask;
 		if (a == mask) {
 			std::cout << '1';
@@ -132,7 +132,7 @@ int main() {
 			std::cout << "Это уже не к нам)";
 			break;
 		}
-		std::cout << '\n' << "Если нужно что-то ещё - введите '1', если нет - '0' " << '\n' << '\n';
+		std::cout << '\n' << "Если нужно что-то ещё - введите '1', если нет - что угодно, но не '1') " << '\n' << '\n';
 		int replay;
 		std::cin >> replay;
 		switch (replay) {
